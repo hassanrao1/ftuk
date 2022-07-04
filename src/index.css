@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body ,
+html
+, * {
+   font-family: 'Poppins', sans-serif;
+}
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.title h2 {
+  font-size: 45px;
+  font-weight: 700;
+  background:-webkit-linear-gradient(0deg,#6EC1E4, #3B66B1);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.trader-menu  {
+  border: none;
+  background: none;
+  color: #383F56;
+  font-size: 23px;
+  font-weight: 700;
+  padding-bottom: 16px;
+  text-align: left;
+  padding-left:10px;
+  padding-bottom:25px;
+  
+}
+.trader-menu.active-fund {
+border-right: 4px solid #6EC1E4;
+
+}
+
+.trader-menu {
+  border-right: 4px solid #cacaca;
+  margin-right: 25px;
+}
+.trader-menu a button:focus {
+  color:#6EC1E4;
+  
+}
+/* Navigation  */
+ul.currency-menu {
+  list-style: none;
+}
+ul.currency-menu li a {
+    text-decoration: none;
+    /* color:#383F56; */
+    color:#000;
+    font-size: 20px;
+    border:none;
+    padding: 6px 30px;
+    /* border-radius: 5px; */
+    font-weight: 600;
+    margin-left: 20px;
+    display: inline-block;
+    transition: .5s;
+    font-weight: normal;
+}
+ 
+ 
+ul.currency-menu h4 {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  color:#383F56;
+}
+ul.currency-menu img {
+  max-width: 100%;
+  height: auto;
+  width: 28px;
+  height: 28px;
+  margin-top: -4px;
+}
+ul.growth-menu {
+  list-style: none;
+}
+ul.growth-menu h4 {
+  padding-left: 16px;
+  padding-bottom: 10px;
+  color:#383F56;
+}
+ul.growth-menu li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  border: 2px solid #6EC1E4;
+  color: #383F56;
+  padding: 6px 15px;
+  margin-left: 15px;
+  display: inline-block;
+  border-radius: 12px;
+  transition: .4s;
+  min-width: 150px;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: normal;
+}
+ul.growth-menu li a:hover {
+  background: #6EC1E4;
+  color: #000 !important;
+}
+tbody, td {
+  border-color: gray !important;
+  border-style: solid !important;
+  border: 0px !important;
+  text-align: center;
+}
+.table>tbody {
+  vertical-align: inherit;
+  text-align: center;
+}
+.table>thead {
+  vertical-align: bottom;
+  text-align: center;
+}
+table.table, td, tr {
+	border: 1px solid #E4E6E8 !important;
+	text-align: center;
+}
+tr:hover {
+	background-color: #F3FDFE;
+}
+
+@media only screen and (max-width:900px) {
+  ul.currency-menu li a {
+    margin-bottom: 12px;
+  }
+  ul.growth-menu li a {
+    margin-bottom: 12px;
+  }
+  .currency-menu {
+    text-align: center;
+  }
+  
+  .growth-menu {
+    text-align: center;
+  }
+}
+@media only screen and (max-width:480px) {
+  .trader-menu {
+    border-right: none;
+    text-align: center;
+    width: 80%;
+    margin: 0 auto;
+}
+  ul.currency-menu li a {
+    padding: 6px 4px;
+    transition: .5s;
+}
+ul.currency-menu li a:first-child {
+  margin-left: 0;
+}
+ul.currency-menu h4 {
+  padding-left: 0px;
+}
+}
+ 
+.active-link,
+ul.growth-menu li a:hover {
+    /* background-color: #6EC1E4 !important;  */
+    border-bottom: 2px solid #6EC1E4 !important; 
+    /* color: #F3FDFE !important; */
+    color: #6EC1E4 !important;
+}
+.active-link-n,
+ul.growth-menu li a:hover {
+    background-color: #6EC1E4 !important; 
+    /* border-bottom: 2px solid #6EC1E4 !important;  */
+    color: #F3FDFE !important;
+    /* color: #6EC1E4 !important; */
+}
+
+.trader-menu.active-fund * {
+    color: #6EC1E4 !important;
+    
+}
+
+.trader-menu  *{
+cursor: pointer;
+font-weight: 600;
+}
+tr.no-border {
+    border-left: 1px solid #fff !important;
+    border-top: 1px solid #fff !important;
+    border-right: 1px solid #fff !important;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: rgb(108 210 247 / 8%) !important;
+    color: var(--bs-table-striped-color);
+}
+
+tr.no-border,
+tr th {
+    font-size: 17px; 
+    text-align: left;
+    font-weight: 600 !important;
+    padding: 15px !important;
+    color: #2c365D !important;
+}
+ul.currency-menu {
+    padding: 0;
+}
+
+ul.growth-menu {
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar.mt-3 {
+    margin-bottom: 22px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+/* css for mobile */
+
+@media (max-width:768px) {
+  .title h2{
+    font-size: 25px;
+  }
+   p.lead {
+    font-size: 17px;
+}
+
+  ul.currency-menu li a{
+  font-size: 13px;
+    width: 92px;
+  }
+  ul.growth-menu li a{
+    font-size: 13px;
+      min-width: 110px;
+  }
+  .trader-menu {
+    border-right: none;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 15px;
+    margin-left: 0px;
+    border-left: 4px solid #cacaca;
+}
+
+.trader-menu.active-fund {
+    border-left: 4px solid #6EC1E4;
+    border-right: 0px;
+}
+.col-md-9 {
+    margin-top: 25px;
+}
+.fs-sm 
+{
+    font-size: 11px;
+    }
+
+    .table tr td{
+        font-size: 13px;
+    }
+    tr.no-border, tr th{
+      font-size: 13px;
+    }
+}
